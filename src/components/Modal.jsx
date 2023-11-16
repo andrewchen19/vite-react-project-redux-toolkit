@@ -13,13 +13,6 @@ const Modal = () => {
         <div className="btn-container">
           <button
             type="button"
-            className="cancel-btn"
-            onClick={() => dispatch(closeModal())}
-          >
-            cancel
-          </button>
-          <button
-            type="button"
             className="confirm-btn"
             // 在一個 event 中，可以放入兩個以上的 action
             onClick={() => {
@@ -28,6 +21,14 @@ const Modal = () => {
             }}
           >
             confirm
+          </button>
+
+          <button
+            type="button"
+            className="cancel-btn"
+            onClick={() => dispatch(closeModal())}
+          >
+            cancel
           </button>
         </div>
       </div>
